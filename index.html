@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food Rating Platform - Rate and explore the best dishes around you.">
+    <title>Food Rating Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="logo">Food<span>Rate</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rate">Rate Makanan</a></li>
+                <li><a href="#top-rated">Top Rated</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#insights">Review Insights</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Dashboard -->
+    <section id="home" class="dashboard">
+        <div class="container">
+            <h1>Best and Tastiest Food in Makassar</h1>
+            <p>Your go-to platform for sharing and exploring food reviews from all over.</p>
+            <div class="top-rated-highlight">
+                <div class="food-item">
+                    <img src="OIP.jpeg" alt="Top Rated Food">
+                    <div class="food-info">
+                        <h3>Coto Makassar</h3>
+                        <p>⭐ 5.0 (5,234 Reviews)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Rating Dashboard -->
+    <section id="rate" class="dashboard">
+        <div class="container">
+            <h2>Rate Your Favorite Dishes</h2>
+            <form class="rating-form">
+                <div class="form-group">
+                    <label for="food-name">Nama Makanan:</label>
+                    <input type="text" id="food-name" placeholder="Masukkan nama makanan" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" required>
+                        <option value="5">5 ⭐</option>
+                        <option value="4">4 ⭐</option>
+                        <option value="3">3 ⭐</option>
+                        <option value="2">2 ⭐</option>
+                        <option value="1">1 ⭐</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review">Ulasan:</label>
+                    <textarea id="review" rows="5" placeholder="Tulis ulasan..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Rating</button>
+            </form>
+        </div>
+    </section>
+
+  <!-- Top Rated Foods Dashboard -->
+  <section id="top-rated" class="dashboard">
+    <div class="container">
+        <h2>Top Rated Foods</h2>
+        <div class="food-slider">
+            <button class="slider-button prev" onclick="moveSlider(-1)">&#10094;</button>
+            <div class="food-grid">
+            <!-- Food Item 1 -->
+            <div class="food-item">
+                <img src="OIP (1).jpeg" alt="Best Burger">
+                <div class="food-info">
+                    <h3>Nasi Goreng</h3>
+                    <p>⭐ 4.8 (875 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509371!2d144.95592561590468!3d-37.81720987975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2zTWFsYm91cm5lLCBBdXN0cmFsaWE!5e0!3m2!1sen!2sid!4v1694961652158!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-item">
+                <img src="Resep-Es-buah.webp" alt="Es Buah">
+                <div class="food-info">
+                    <h3>Es Buah</h3>
+                    <p>⭐ 4.0 (790 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126917.51743660934!2d119.3855310906288!3d-5.134671546700117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf1cc719b730b1%3A0x8fc7c9c3d1562cd3!2sMakassar%2C%20South%20Sulawesi%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1694961959483!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-item">
+                <img src="066496500_1721195157-pallubasa.webp" alt="Pallubasa">
+                <div class="food-info">
+                    <h3>Pallubasa</h3>
+                    <p>⭐ 5.0 (2,100 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126917.51743660934!2d119.3855310906288!3d-5.134671546700117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf1cc719b730b1%3A0x8fc7c9c3d1562cd3!2sMakassar%2C%20South%20Sulawesi%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1694961959483!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-item">
+                <img src="1704299152668.avif" alt="Food 4">
+                <div class="food-info">
+                    <h3>Borongko</h3>
+                    <p>⭐ 4.6 (800 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Food Item 5 -->
+            <div class="food-item">
+                <img src="1704299225862.webp" alt="Food 5">
+                <div class="food-info">
+                    <h3>ikan bakar poatere</h3>
+                    <p>⭐ 4.2 (650 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Food Item 6 -->
+            <div class="food-item">
+                <img src="1704299394929.avif" alt="Food 6">
+                <div class="food-info">
+                    <h3>Sop Saudara</h3>
+                    <p>⭐ 4.9 (950 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Food Item 7 -->
+            <div class="food-item">
+                <img src="1704299424729.avif" alt="Food 7">
+                <div class="food-info">
+                    <h3>Kapurung</h3>
+                    <p>⭐ 4.3 (720 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Food Item 8 -->
+            <div class="food-item">
+                <img src="1704299460436.avif" alt="Food 8">
+                <div class="food-info">
+                    <h3>Pisang Epe</h3>
+                    <p>⭐ 4.5 (770 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Food Item 9 -->
+            <div class="food-item">
+                <img src="1704299535591.webp" alt="Food 9">
+                <div class="food-info">
+                    <h3>Mie Titi</h3>
+                    <p>⭐ 4.7 (850 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Food Item 10 -->
+            <div class="food-item">
+                <img src="image.1704299078957.webp" alt="Food 10">
+                <div class="food-info">
+                    <h3>Palu Butung</h3>
+                    <p>⭐ 4.1 (710 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Food Item 11 -->
+            <div class="food-item">
+                <img src="image.1704299031576.avif" alt="Food 11">
+                <div class="food-info">
+                    <h3>Konro</h3>
+                    <p>⭐ 4.4 (760 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Food Item 12 -->
+            <div class="food-item">
+                <img src="1704299291786.webp" alt="Food 12">
+                <div class="food-info">
+                    <h3>Pisang Ijo
+                    </h3>
+                    <p>⭐ 4.9 (900 Reviews)</p>
+                </div>
+                <div class="food-location">
+                    <h4>TOP PLACES:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <button class="slider-button next" onclick="moveSlider(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Profile Dashboard -->
+    <section id="profile" class="dashboard">
+        <div class="container">
+            <h2>Your Profile</h2>
+            <div class="profile-grid">
+                <!-- Profile Card 1 -->
+                <div class="profile-card">
+                    <img src="WhatsApp Image 2024-09-18 at 02.59.21.jpeg" alt="User Profile">
+                    <h3>Andi Siti Aulia Akbar</h3>
+                    <p>Bio: Food lover, always searching for the next best dish.</p>
+                    <h4>Your Recent Reviews</h4>
+                    <ul>
+                        <li>Pallubasa: ⭐⭐⭐⭐⭐</li>
+                        <li>Barongko: ⭐⭐⭐⭐⭐</li>
+                    </ul>
+                </div>
+    
+                <!-- Profile Card 2 -->
+                <div class="profile-card">
+                    <img src="WhatsApp Image 2024-09-17 at 23.15.52.jpeg" alt="User Profile">
+                    <h3>Almughira Ahmad Kalamor</h3>
+                    <p>Bio: Food lover, always searching for the next best dish.</p>
+                    <h4>Your Recent Reviews</h4>
+                    <ul>
+                        <li>Coto: ⭐⭐⭐⭐⭐</li>
+                        <li>Nasi Goreng: ⭐⭐⭐⭐⭐</li>
+                    </ul>
+                </div>
+    
+                <!-- Profile Card 3 -->
+                <div class="profile-card">
+                    <img src="WhatsApp Image 2024-09-17 at 23.27.42.jpeg" alt="User Profile">
+                    <h3>Alif Alfi Takdir</h3>
+                    <p>Bio: Food lover, always searching for the next best dish.</p>
+                    <h4>Your Recent Reviews</h4>
+                    <ul>
+                        <li>Coto: ⭐⭐⭐⭐⭐</li>
+                        <li>Pallubasa: ⭐⭐⭐⭐⭐</li>
+                    </ul>
+                </div>
+    
+                <!-- Profile Card 4 -->
+                <div class="profile-card">
+                    <img src="WhatsApp Image 2024-09-18 at 02.56.00.jpeg" alt="User Profile">
+                    <h3>DAHNIAR</h3>
+                    <p>Bio: Food lover, always searching for the next best dish.</p>
+                    <h4>Your Recent Reviews</h4>
+                    <ul>
+                        <li>Pisang Ijo: ⭐⭐⭐⭐⭐</li>
+                        <li>Kapurung: ⭐⭐⭐⭐⭐</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Review Insights Dashboard -->
+    <section id="insights" class="dashboard">
+        <div class="container">
+            <h2>Review Insights</h2>
+            <div class="insights-content">
+                <h3>Food Trends and Insights</h3>
+                <p>Rating trends by category: ⭐⭐⭐⭐</p>
+    
+                <!-- Tabel untuk Most Rated Food Categories -->
+                <h4>Most Rated Food Categories:</h4>
+                <table class="insights-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Average Rating</th>
+                            <th>Total Reviews</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Traditional Dishes</td>
+                            <td>4.8⭐</td>
+                            <td>12,350</td>
+                        </tr>
+                        <tr>
+                            <td>Desserts</td>
+                            <td>4.5⭐</td>
+                            <td>8,560</td>
+                        </tr>
+                        <tr>
+                            <td>Street Food</td>
+                            <td>4.2⭐</td>
+                            <td>7,240</td>
+                        </tr>
+                        <tr>
+                            <td>Beverages</td>
+                            <td>4.0⭐</td>
+                            <td>6,800</td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <!-- Tabel untuk Top Locations for Food -->
+                <h4>Top Locations for Food:</h4>
+                <table class="insights-table">
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Average Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Losari Beach</td>
+                            <td>4.9⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Karebosi Park</td>
+                            <td>4.6⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Makassar Chinatown</td>
+                            <td>4.7⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FoodRate. All rights reserved. | <a href="#contact">Contact Us</a></p>
+        </div>
+    </footer>
+</body>
+</html>
